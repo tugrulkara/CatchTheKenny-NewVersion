@@ -1,4 +1,4 @@
-package com.tugrulkara.kennycatchnewversion;
+package com.tugrulkara.CatchTheKenny;
 
 import android.content.Context;
 

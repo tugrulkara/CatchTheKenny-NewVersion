@@ -7,16 +7,87 @@
     android:background="#00BCD4"
     tools:context=".MainActivity">
 
+
+    <ImageView
+        android:id="@+id/southimage"
+        android:layout_width="170dp"
+        android:layout_height="207dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/south" />
+
     <Button
         android:id="@+id/start"
         android:layout_width="204dp"
         android:layout_height="121dp"
         android:backgroundTint="#F44336"
         android:onClick="start"
-        android:text="Kenny Catch"
+        android:text="Başla"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start">
+
+        <ImageView
+            android:id="@+id/imagefirst"
+            android:layout_width="407dp"
+            android:layout_height="222dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/imagekenny" />
+
+        <ImageView
+            android:id="@+id/imagesecond"
+            android:layout_width="166dp"
+            android:layout_height="232dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="260dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/imagekennyy" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioGroup
+        android:layout_width="99dp"
+        android:layout_height="138dp"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757">
+
+        <RadioButton
+            android:id="@+id/low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kolay" />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orta" />
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zor" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
